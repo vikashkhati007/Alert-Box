@@ -1,0 +1,120 @@
+  @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&family=Tilt+Warp&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: fantasy;
+}
+
+body {
+  background-color: #979a9f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 10vh;
+  font-family: 'Tilt Warp', cursive;
+  color: aliceblue;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgba(10, 9, 9, 0.5);
+  border-radius: 20px;
+  padding: 20px;
+
+}
+
+.sucess-alert {
+  margin-top: 150px;
+  width: 500px;
+  height: 5vh;
+  background-color: rgba(61, 222, 168, 0.6);
+  border-radius: 20px;
+  border: 2px solid rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  animation: open 0.5s ease-in-out;
+}
+
+
+@keyframes open {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+ 
+.sucess-alert h1 {
+  color: rgb(0, 0, 0);
+  font-weight: 100;
+  font-size: 1.7rem;
+}
+
+.sucess-alert h2{
+cursor: pointer;
+}
+
+.sucess-alert h2:hover{
+  color: white;
+}
+
+
+.fade-alert {
+  animation: fade 1s ease-in-out;
+}
+
+
+
+@keyframes fade {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+.margin{
+  margin: 20px;
+
+}
+
+.close-alert{
+  margin-top: 100px;
+  width: 500px;
+  height: 5vh;
+  background-color: rgba(222, 61, 61, 0.6);
+  border-radius: 20px;
+  border: 2px solid rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  animation: open 0.5s ease-in-out;
+
+}
+
+.close-alert h1 {
+  color: rgb(0, 0, 0);
+  font-weight: 100;
+  font-size: 1.7rem;
+}
+
+.close-alert h2{
+cursor: pointer;
+}
+
+.close-alert h2:hover{
+  color: white;
+}
